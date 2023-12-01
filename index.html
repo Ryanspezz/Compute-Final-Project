@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+      <title>Global Youtuber Statistics</title>
+   </head>
+   <body>
+      <div class="jumbotron jumbotron-fluid">
+         <div class="container">
+            <h1 class="display-4">Global Youtuber Statistics and Insights</h1>
+            <p class="lead">Ryan Spezzacatena and Maddie Koo <br> Team 1</p>
+         </div>
+      </div>
+      <div class="container" id="bsr-wrapper">
+         <div class='py-3 my-4'></div>
+         <h1>Analyzing the top 1000 Youtubers globally by subscriber count</h1>
+         <p>Exploration Questions:<br>- What insights can Youtube analytics provide regarding the success factors of top Youtube channels and what distinguishes them from others?<br>- What are the most popular categories and upload frequencies that resonate with audiences?<br>- Where is the highest concentration of successful Youtube channels when looking at a world map?<br>- Do certain regions tend to produce content in specific categories? </p>
+        
+         <h1>Data Journey</h1>
+         <p>We will describe our data journey and any caveats here as well as link <br> <a href="https://www.kaggle.com/datasets/nelgiriyewithana/global-youtube-statistics-2023">Visit our dataset!</a> 
+         </p>
+         <h1>Visualizations</h1>
+         <div class="row">
+            <div class="col"><img src="data:image/png;base64,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" class="img-fluid mr-auto d-block border-0 rounded-0"></div>
+            <div class="col-md-9">
+               <p>Describe 3 insights from this visualization:  <br>- <br>- <br>-  </p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-9">
+               <p>Describe 3 insights:  <br>- <br>- <br>- </p>
+            </div>
+            <div class="col"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa0mMUxJD0a8D8lGxUk6aEenLdZllI8mAhWg&usqp=CAU" class="img-fluid mr-auto d-block border-0 rounded-0 "></div>
+         </div>
+         <div class="row">
+            <div class="col-md-9">
+               <p>Describe 3 insights:  <br>- <br>- <br>- </p>
+            </div>
+            <div class="col"><img src="https://api.backlinko.com/app/uploads/2021/09/youtube-views-by-country.png" class="img-fluid mr-auto d-block border-0 rounded-0 "></div>
+         </div>
+         <h1>Final Takeaways</h1>
+         <p>We will talk about what we learned and our final conclusions here</p>
+         <h1>Demo Video</h1>
+         <div class="row">
+            <div class="col">
+               <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3nrLc_JOF7k" allow="web-share" allowfullscreen></iframe></div>
+            </div>
+            <div class="col-md-6">
+               <p>A walk through of our code</p>
+            </div>
+         </div>
+      </div>
+      <script src="https://www.youtube.com/embed/JJ-ogw8AZ3o?si=P6YZMHv-sgyEacE8"></script><script src="https://www.youtube.com/embed/JJ-ogw8AZ3o?si=P6YZMHv-sgyEacE8"></script><script src="https://www.youtube.com/embed/JJ-ogw8AZ3o?si=P6YZMHv-sgyEacE8" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+   </body>
+</html>
